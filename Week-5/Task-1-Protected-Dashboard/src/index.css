@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+  text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.login-card p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #2563eb;
+}
+
+.login-card button,
+.dashboard button {
+  border: none;
+  border-radius: 8px;
+  padding: 13px 18px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-card button:hover,
+.dashboard button:hover {
+  background: #1d4ed8;
+}
+
+.login-card button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc2626 !important;
+  margin-top: 15px;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.dashboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.dashboard main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard main h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.dashboard main p {
+  color: #475569;
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 28px 20px;
+  }
+
+  .dashboard header {
+    padding: 18px 20px;
+  }
+
+  .dashboard header h1 {
+    font-size: 22px;
+  }
+
+  .dashboard main {
+    margin: 25px 15px;
+    padding: 25px 20px;
+  }
+}
