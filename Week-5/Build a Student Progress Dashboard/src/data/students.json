@@ -1,0 +1,26 @@
+{
+    "student": {
+      "name": "Wafa",
+      "completedCourses": 8,
+      "pendingCourses": 4,
+      "progress": 67,
+      "courses": [
+        {
+          "name": "Web Development",
+          "progress": 85
+        },
+        {
+          "name": "Database Systems",
+          "progress": 70
+        },
+        {
+          "name": "Artificial Intelligence",
+          "progress": 60
+        },
+        {
+          "name": "Software Engineering",
+          "progress": 50
+        }
+      ]
+    }
+  }
